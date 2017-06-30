@@ -33,7 +33,7 @@ try
     %READ IN AND RANDOMIZE ALL FILES FOR THE EXPERIMENT!
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    vidInfo = readtable('MPP_videos.csv');
+    vidInfo = readtable('MPC_videos.csv');
     MAIN_ITEMS = vidInfo(vidInfo.List == conditionno,:);
     if toExtend %Assign the other-domain set! Since we don't do any learning, arbitrarily get Manner or Action
         if(conditionno == 1 || conditionno == 3) %Start with MannerPath, move to Action
