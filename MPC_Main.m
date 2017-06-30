@@ -1,5 +1,5 @@
-function MPP_2ET_Main(SubjectID, Condition, ToExtend, varargin)
-% The new MPP, for eyetracking 2yos. The new excitement is that
+function MPC_Main(SubjectID, Condition, varargin)
+% The main fun for MP-Concepts! The new excitement is that
 % this version has refactored the common resources for PTB,
 % eyetracking, and common stimuli for easier/more economical
 % iteration of experiments. 
@@ -12,14 +12,14 @@ function MPP_2ET_Main(SubjectID, Condition, ToExtend, varargin)
 p = inputParser;
 p.addRequired('SubjectID');
 p.addRequired('Condition');
-p.addRequired('ToExtend');
+p.addParamValue('ToExtend', 'NoExtend', @isstr);
 p.addParamValue('use_eyetracker', 1, @isnumeric); %use 0 for no eyetracker
 p.addParamValue('experiment_name', 'MPPCREATION', @isstr);
 p.addParamValue('eyetracker_name', 'Lion', @isstr); %in case you have multiple eyetrackers in the lab...
-p.addParamValue('calib_version', 'Kid', @isstr); %can replace with 'Kid' for a cooler kid display. 
+p.addParamValue('calib_version', 'Adult ', @isstr); %can replace with 'Kid' for a cooler kid display. 
 p.addParamValue('max_calib', 5, @isnumeric); %in case we want to NOT loop on the calibration forever.
 
-p.parse(SubjectID, Condition, ToExtend, varargin{:});
+p.parse(SubjectID, Condition, varargin{:});
 inputs = p.Results;
 
 %*** Set the global variables
@@ -49,9 +49,10 @@ end
 
 %Make sure paths are set correctly (your system may need to update these!)
 addpath(genpath('/Applications/TobiiProSDK'));
+addpath(genpath('/Applications/PsychToolBox'));
 addpath(genpath('/Users/snedlab/Desktop/MPP-Common-Resources'));
 RESOURCEFOLDER = '/Users/snedlab/Desktop/MPP-Common-Resources';
-EXPFOLDER = fileparts(which('MPP_2ET_Main.m')); %add this folder to the path too.
+EXPFOLDER = fileparts(which('MPC_Main.m')); %add this folder to the path too.
 addpath(genpath(EXPFOLDER));
 DATAFOLDER = [EXPFOLDER '/Data'];
 
@@ -64,10 +65,10 @@ TOEXTEND = inputs.ToExtend;
 
 
 % Validate inputs
-Conditions = {'Manner', 'Path', 'Action', 'Effect'};
+Conditions = {'Manner', 'Path'};
 knownCond = strfind(Conditions, CONDITION);
 k = logical(sum(~cellfun(@isempty, knownCond)));
-assert(k, 'Use Manner Path Action or Effect for main exp')
+assert(k, 'Use Manner or Path for main exp')
 
 ExtConditions = {'Extend', 'NoExtend'};
 knownCond = strfind(ExtConditions, TOEXTEND);
@@ -146,7 +147,7 @@ Screen(EXPWIN,'Flip');
 disp(strcat('Starting Experiment: ', EXPERIMENT));
 
 %---And the experiment runs here!
-Do_MPP_Exp();
+Do_MPC_Exp();
 
 %---Clean up and exit nicely
 Screen('Close',EXPWIN);

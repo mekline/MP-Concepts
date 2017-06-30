@@ -1,7 +1,7 @@
 
-function Do_MPP_Exp()
+function Do_MPC_Exp()
 
-%We are adapting MPP to the eyetracker, very exciting!
+%Experiment running for the MPC experiment. 
 global EXPWIN RESOURCEFOLDER DATAFILE 
 
 %MPP specific objects
@@ -14,10 +14,10 @@ switch CONDITION
         conditionno = 1;
     case 'Path'
         conditionno = 3;
-    case 'Action'
-        conditionno = 6;
-    case 'Effect'
-        conditionno = 5; %(yes #s reversed between domains for now)
+%     case 'Action'
+%         conditionno = 6;
+%     case 'Effect'
+%         conditionno = 5; %(yes #s reversed between domains for now)
 end
 
 switch TOEXTEND
@@ -105,7 +105,7 @@ try
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    Text_Show('Press spacebar to start experiment.')
+    Text_Show('Press spacebar to start the MPC experiment. It should play noun trials and then crash!')
     Take_Response();
     Show_Blank();
     
@@ -131,6 +131,8 @@ try
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % N TRIALS OF WITHIN-FIELD PRIMING/VERB LEARNING
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    %MK NOTE 6/30/2017 - code below here probably doesn't work!
     
     % How many trials?
     if ~todebug
