@@ -35,6 +35,7 @@ try
     
     vidInfo = readtable('MPC_videos.csv');
     MAIN_ITEMS = vidInfo(vidInfo.List == conditionno,:);
+    
     if toExtend %Assign the other-domain set! Since we don't do any learning, arbitrarily get Manner or Action
         if(conditionno == 1 || conditionno == 3) %Start with MannerPath, move to Action
             EXTENDCONDITION = 'Action';
@@ -133,13 +134,6 @@ try
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     %MK NOTE 6/30/2017 - code below here probably doesn't work!
-    
-    % How many trials?
-    if ~todebug
-        parameters.ntrials = height(MAIN_ITEMS);
-    else
-        parameters.ntrials = 2; %For the skeleton, play some short sample trials!
-    end
     
     Text_Show('Ready? Press space to watch the movies.');
     Take_Response();
