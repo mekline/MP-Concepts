@@ -41,6 +41,7 @@ global RESOURCEFOLDER MAINITEMS
     %soundtoplay_trainAudioPast3 = strcat('Audio/Finished/', mainItems.trainAudioPast3(trialNo));
     %soundtoplay_whichOne = strcat('Audio/Finished/', mainItems.whichOneAudio(trialNo));
     %soundtoplay_letsFind = strcat('Audio/Finished/aa_lets_find/', mainItems.letsFindAudio(trialNo));
+    Each animal's audio;
     
     %these ones are the same every time
     
@@ -49,7 +50,8 @@ global RESOURCEFOLDER MAINITEMS
     %soundtoplay_goodJob = 'Audio/Finished/aa_motivation/goodjob.wav';
     %soundtoplay_nowLetsSee = 'Audio/Finished/aa_motivation/nowletssee.wav';
     %soundtoplay_wow = 'Audio/Finished/aa_motivation/wow.wav';
-     
+    Chime sound; 
+    Whoosh transition;
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ANIMAL IMAGES
@@ -57,20 +59,33 @@ global RESOURCEFOLDER MAINITEMS
 
     %starImage = parameters.mainStars(trialNo);
     %greySquare = 'stars/grey.jpg';
+    
+    elephant =;
+    frog =;
+    bird =;
+    cat =;
+    dog =;
+    lion =;
+    bee =;
+    bear =;
+    butterfly =;
+    turtle =;
+    duck =;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PLAY BIAS TEST VIDEO
+% PLAY AMBIGUOUS VIDEO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
         Show_Blank;
 
-        Play_Sound(soundtoplay_ambigAudioFuture{1}, 'toBlock');
+        %Play_Sound(soundtoplay_ambigAudioFuture{1}, 'toBlock');
     
         PlayCenterMovie(movietoplay_ambigVid{1});
-        PlayCenterMovie(movietoplay_ambigVid{1});
-        Show_Blank;
+        %PlayCenterMovie(movietoplay_ambigVid{1});
+        %Show_Blank;
         
         Play_Sound(soundtoplay_ambigAudioPast{1}, 'toBlock');
+        (Chime sound);
         
         Show_Blank; 
     
@@ -78,7 +93,8 @@ global RESOURCEFOLDER MAINITEMS
     % BIAS TEST
     % Play the two event movies; movie always plays L then R
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Play_Sound(soundtoplay_letsFind{1}, 'toBlock');
+    
+    %Play_Sound(soundtoplay_letsFind{1}, 'toBlock');
     Show_Blank;      
       
     %Using the human-interpretable side variables instead...
@@ -93,6 +109,8 @@ global RESOURCEFOLDER MAINITEMS
         
     %And take a response
     Play_Sound(soundtoplay_whichOne{1}, 'toBlock');
+    (Which animal gets...);
+        
     mainItems.biasTestAns{trialNo} = Take_Response();
     Show_Blank();
 
