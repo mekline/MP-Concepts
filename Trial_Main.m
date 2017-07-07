@@ -76,18 +76,20 @@ global RESOURCEFOLDER MAINITEMS
 % PLAY AMBIGUOUS VIDEO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-        Show_Blank;
+    Text_Show('READY? Press space.');
+    Take_Response();
+    Show_Blank;
 
-        %Play_Sound(soundtoplay_ambigAudioFuture{1}, 'toBlock');
+    %Play_Sound(soundtoplay_ambigAudioFuture{1}, 'toBlock');
     
-        PlayCenterMovie(movietoplay_ambigVid{1});
-        %PlayCenterMovie(movietoplay_ambigVid{1});
-        %Show_Blank;
+    PlayCenterMovie(movietoplay_ambigVid{1});
+    %PlayCenterMovie(movietoplay_ambigVid{1});
+    %Show_Blank;
         
-        Play_Sound(soundtoplay_ambigAudioPast{1}, 'toBlock');
-        (Chime sound);
+    Play_Sound(soundtoplay_ambigAudioPast{1}, 'toBlock');
+    (Chime sound);
         
-        Show_Blank; 
+    Show_Blank; 
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % BIAS TEST
