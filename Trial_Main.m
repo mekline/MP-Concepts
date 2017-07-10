@@ -60,17 +60,17 @@ global RESOURCEFOLDER MAINITEMS
     %starImage = parameters.mainStars(trialNo);
     %greySquare = 'stars/grey.jpg';
     
-    elephant =;
-    frog =;
-    bird =;
-    cat =;
-    dog =;
-    lion =;
-    bee =;
-    bear =;
-    butterfly =;
-    turtle =;
-    duck =;
+    elephant = 'elephant.jpg';
+    frog = 'frog.jpg';
+    bird = 'bird.jpg';
+    cat = 'cat.jpg';
+    dog = 'dog.jpg';
+    lion = 'lion.jpg';
+    bee = 'bee.jpg';
+    bear = 'bear.jpg';
+    butterfly = 'butterfly.jpg';
+    turtle = 'turtle.jpg';
+    duck = 'duck.jpg';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PLAY AMBIGUOUS VIDEO
@@ -111,7 +111,7 @@ global RESOURCEFOLDER MAINITEMS
         
     %And take a response
     Play_Sound(soundtoplay_whichOne{1}, 'toBlock');
-    (Which animal gets...);
+    ****(Which animal gets...)****;
         
     mainItems.biasTestAns{trialNo} = Take_Response();
     Show_Blank();
@@ -131,45 +131,48 @@ global RESOURCEFOLDER MAINITEMS
 
     mainItems.trainStart(trialNo) = GetSecs;
 
-    Play_Sound(soundtoplay_trainAudioFuture1{1}, 'toBlock');
+    %Play_Sound(soundtoplay_trainAudioFuture1{1}, 'toBlock');
 
     PlayCenterMovie(movietoplay_trainV1{1}); 
     
-    PlayCenterMovie(movietoplay_trainV1{1});
-    Show_Blank;
+    %PlayCenterMovie(movietoplay_trainV1{1});
+    %Show_Blank;
 
     Play_Sound(soundtoplay_trainAudioPast1{1}, 'toBlock');
-
+    ****(Which animal gets...)****;
+    
     WaitSecs(1.500);
     
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % 2222222222222222222222222222222222222222222222222222222222222222222222222
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    Play_Sound(soundtoplay_trainAudioFuture2{1}, 'toBlock');
+    %Play_Sound(soundtoplay_trainAudioFuture2{1}, 'toBlock');
     
     PlayCenterMovie(movietoplay_trainV2{1});
     
-    PlayCenterMovie(movietoplay_trainV2{1});
-    Show_Blank;
+    %PlayCenterMovie(movietoplay_trainV2{1});
+    %Show_Blank;
 
     Play_Sound(soundtoplay_trainAudioPast2{1}, 'toBlock');
-
+    ****(Which animal gets...)****;
+    
     WaitSecs(1.500);
     
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % 333333333333333333333333333333333333333333333333333333333333333333333333%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    Play_Sound(soundtoplay_trainAudioFuture3{1}, 'toBlock');
+    %Play_Sound(soundtoplay_trainAudioFuture3{1}, 'toBlock');
 
     PlayCenterMovie(movietoplay_trainV3{1});
     
-    PlayCenterMovie(movietoplay_trainV3{1});
-    Show_Blank;
+    %PlayCenterMovie(movietoplay_trainV3{1});
+    %Show_Blank;
 
     Play_Sound(soundtoplay_trainAudioPast3{1}, 'toBlock');
-
+    ****(Which animal gets...)****;
+    
     mainItems.trainEnd(trialNo) = GetSecs;
    
     WaitSecs(1.500);
@@ -189,8 +192,8 @@ global RESOURCEFOLDER MAINITEMS
 
     mainItems.finalTestStart(trialNo) = GetSecs;
 
-    Play_Sound(soundtoplay_letsFind{1}, 'toBlock');
-    Show_Blank;      
+    %Play_Sound(soundtoplay_letsFind{1}, 'toBlock');
+    %Show_Blank;      
   
 
     %Using the human-interpretable side variables...

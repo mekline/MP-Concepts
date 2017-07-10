@@ -116,14 +116,14 @@ try
     Play_Sound(strcat(RESOURCEFOLDER, '/audio/aa_motivation/getready.wav'), 'toBlock');
     Show_Blank();
 
-    %Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{1}));
+    Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{1}));
     
     Take_Response();
     Show_Blank;
 
       
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % 2 TRIALS OF SHAPE TRAINING
+    % 2 TRIALS OF NOUN TRAINING
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
     MPP_Noun_Training();
