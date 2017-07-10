@@ -123,10 +123,10 @@ try
 
       
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % 2 TRIALS OF SHAPE TRAINING
+    % 3 TRIALS OF SHAPE TRAINING
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
-    MPP_Noun_Training();
+    %MPP_Noun_Training();
 
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,6 +134,9 @@ try
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     %MK NOTE 6/30/2017 - code below here probably doesn't work!
+    
+    %Number of trials
+    parameters.ntrials = 8;
     
     Text_Show('Ready? Press space to watch the movies.');
     Take_Response();

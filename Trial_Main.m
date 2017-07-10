@@ -99,7 +99,6 @@ global RESOURCEFOLDER MAINITEMS
     %Show_Blank;
         
     Play_Sound(soundtoplay_ambigAudioPast{1}, 'toBlock');
-    (Chime sound);
         
     Show_Blank; 
     
@@ -124,7 +123,7 @@ global RESOURCEFOLDER MAINITEMS
     %And take a response
     Play_Sound(soundtoplay_whichOne{1}, 'toBlock');
     
-    ****(Which animal gets...)****;
+    %****(Which animal gets...)****;
     Play_Sound(strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/lion.wav'), 'toBlock');
         Show_Blank;    
         
@@ -154,7 +153,7 @@ global RESOURCEFOLDER MAINITEMS
     %Show_Blank;
 
     Play_Sound(soundtoplay_trainAudioPast1{1}, 'toBlock');
-    ****(Which animal gets...)****;
+    %****(Which animal gets...)****;
     
     WaitSecs(1.500);
     
@@ -170,7 +169,7 @@ global RESOURCEFOLDER MAINITEMS
     %Show_Blank;
 
     Play_Sound(soundtoplay_trainAudioPast2{1}, 'toBlock');
-    ****(Which animal gets...)****;
+    %****(Which animal gets...)****;
     
     WaitSecs(1.500);
     
@@ -186,7 +185,7 @@ global RESOURCEFOLDER MAINITEMS
     %Show_Blank;
 
     Play_Sound(soundtoplay_trainAudioPast3{1}, 'toBlock');
-    ****(Which animal gets...)****;
+    %****(Which animal gets...)****;
     
     mainItems.trainEnd(trialNo) = GetSecs;
    

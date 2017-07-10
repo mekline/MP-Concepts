@@ -116,14 +116,14 @@ try
     Play_Sound(strcat(RESOURCEFOLDER, '/audio/aa_motivation/getready.wav'), 'toBlock');
     Show_Blank();
 
-    Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{1}));
+    %Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{1}));
     
     Take_Response();
     Show_Blank;
 
       
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % 2 TRIALS OF NOUN TRAINING
+    % 2 TRIALS OF SHAPE TRAINING
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
     MPP_Noun_Training();
@@ -140,8 +140,8 @@ try
     
     %And actually play the trials! Data is saved on each round to allow for
     %partial data collection
-    for i=1:parameters.ntrials
-        Trial_Main(i)
+    for i=1:GLOBAL V.ntrials
+        Trial_Main(8)
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Write result file
