@@ -39,9 +39,21 @@ global RESOURCEFOLDER MAINITEMS
     %soundtoplay_trainAudioPast2 = strcat('Audio/Finished/', mainItems.trainAudioPast2(trialNo));
     %soundtoplay_trainAudioFuture3 = strcat('Audio/Finished/', mainItems.trainAudioFuture3(trialNo));
     %soundtoplay_trainAudioPast3 = strcat('Audio/Finished/', mainItems.trainAudioPast3(trialNo));
-    %soundtoplay_whichOne = strcat('Audio/Finished/', mainItems.whichOneAudio(trialNo));
+    soundtoplay_whichOne = strcat('Audio/Finished/', mainItems.whichOneAudio(trialNo));
     %soundtoplay_letsFind = strcat('Audio/Finished/aa_lets_find/', mainItems.letsFindAudio(trialNo));
-    Each animal's audio;
+    
+    %Each animal's audio:
+    soundtoplay_elephant = strcat('audio/animalaudiofiles/elephant.wav', mainItems.elephant(trialNo));
+    soundtoplay_frog = strcat('audio/animalaudiofiles/frog.wav', mainItems.frog(trialNo));
+    soundtoplay_bird = strcat('audio/animalaudiofiles/bird.wav', mainItems.bird(trialNo));
+    soundtoplay_cat = strcat('audio/animalaudiofiles/cat.wav', mainItems.cat(trialNo));
+    soundtoplay_dog = strcat('audio/animalaudiofiles/dog.wav', mainItems.dog(trialNo));
+    soundtoplay_lion = strcat('audio/animalaudiofiles/lion.wav', mainItems.lion(trialNo));
+    soundtoplay_bee = strcat('audio/animalaudiofiles/bee.wav', mainItems.bee(trialNo));
+    soundtoplay_bear = strcat('audio/animalaudiofiles/bear.wav', mainItems.bear(trialNo));
+    soundtoplay_butterfly = strcat('audio/animalaudiofiles/butterfly.wav', mainItems.butterfly(trialNo));
+    soundtoplay_turtle = strcat('audio/animalaudiofiles/turtle.wav', mainItems.turtle(trialNo));
+    soundtoplay_duck = strcat('audio/animalaudiofiles/duck.wav', mainItems.duck(trialNo));
     
     %these ones are the same every time
     
@@ -111,7 +123,10 @@ global RESOURCEFOLDER MAINITEMS
         
     %And take a response
     Play_Sound(soundtoplay_whichOne{1}, 'toBlock');
+    
     ****(Which animal gets...)****;
+    Play_Sound(strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/lion.wav'), 'toBlock');
+        Show_Blank;    
         
     mainItems.biasTestAns{trialNo} = Take_Response();
     Show_Blank();
@@ -171,7 +186,7 @@ global RESOURCEFOLDER MAINITEMS
     %Show_Blank;
 
     Play_Sound(soundtoplay_trainAudioPast3{1}, 'toBlock');
-    
+    ****(Which animal gets...)****;
     
     mainItems.trainEnd(trialNo) = GetSecs;
    
@@ -192,8 +207,8 @@ global RESOURCEFOLDER MAINITEMS
 
     mainItems.finalTestStart(trialNo) = GetSecs;
 
-    Play_Sound(soundtoplay_letsFind{1}, 'toBlock');
-    Show_Blank;      
+    %Play_Sound(soundtoplay_letsFind{1}, 'toBlock');
+    %Show_Blank;      
   
 
     %Using the human-interpretable side variables...

@@ -33,7 +33,7 @@ global RESOURCEFOLDER STARS
        
         Show_Blank;
 
-        Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{2}));
+        %Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{2}));
         
         Take_Response(); %spacebar to go on
         Show_Blank; 
@@ -64,7 +64,7 @@ global RESOURCEFOLDER STARS
         
         Show_Blank;
 
-        Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{3}));
+        %Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{3}));
         
         Take_Response(); %spacebar to go on
         
