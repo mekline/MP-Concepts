@@ -7,7 +7,7 @@ function [response] = Trial_Main(trialNo)
 % with foils
 % Final test - take a forced choice response between M1P2 and M2P1 again
 
-global RESOURCEFOLDER MAINITEMS
+global RESOURCEFOLDER MAIN_ITEMS
 
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
