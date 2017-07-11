@@ -15,45 +15,45 @@ global RESOURCEFOLDER MAIN_ITEMS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     %Trial movies
-    movietoplay_ambigVid = strcat('Movies/', mainItems.ambigV(trialNo));
-    movietoplay_path = strcat('Movies/', mainItems.pBiasV(trialNo));    
-    movietoplay_manner = strcat('Movies/', mainItems.mBiasV(trialNo));
-    movietoplay_trainV1 = strcat('Movies/', mainItems.trainV1(trialNo));
-    movietoplay_Foil1 = strcat('Movies/', mainItems.Foil1(trialNo));
-    movietoplay_trainV2 = strcat('Movies/', mainItems.trainV2(trialNo));
-    movietoplay_Foil2 = strcat('Movies/', mainItems.Foil2(trialNo));
-    movietoplay_trainV3 = strcat('Movies/', mainItems.trainV3(trialNo));
-    movietoplay_Foil3 = strcat('Movies/', mainItems.Foil3(trialNo));
-    movietoplay_mTest = strcat('Movies/', mainItems.mTestV(trialNo));
-    movietoplay_pTest = strcat('Movies/', mainItems.pTestV(trialNo));
+    movietoplay_ambigVid = strcat(RESOURCEFOLDER, '/movies/', MAIN_ITEMS.ambigV(trialNo));
+    movietoplay_path = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.pBiasV(trialNo));    
+    movietoplay_manner = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.mBiasV(trialNo));
+    movietoplay_trainV1 = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.trainV1(trialNo));
+    movietoplay_Foil1 = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.Foil1(trialNo));
+    movietoplay_trainV2 = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.trainV2(trialNo));
+    movietoplay_Foil2 = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.Foil2(trialNo));
+    movietoplay_trainV3 = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.trainV3(trialNo));
+    movietoplay_Foil3 = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.Foil3(trialNo));
+    movietoplay_mTest = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.mTestV(trialNo));
+    movietoplay_pTest = strcat(RESOURCEFOLDER, 'movies/', MAIN_ITEMS.pTestV(trialNo));
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % AUDIO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    %soundtoplay_ambigAudioFuture = strcat('Audio/Finished/', mainItems.ambigAudioFuture(trialNo));
-    %soundtoplay_ambigAudioPast = strcat('Audio/Finished/', mainItems.ambigAudioPast(trialNo));
-    %soundtoplay_trainAudioFuture1 = strcat('Audio/Finished/', mainItems.trainAudioFuture1(trialNo));
-    %soundtoplay_trainAudioPast1 = strcat('Audio/Finished/', mainItems.trainAudioPast1(trialNo));
-    %soundtoplay_trainAudioFuture2 = strcat('Audio/Finished/', mainItems.trainAudioFuture2(trialNo));
-    %soundtoplay_trainAudioPast2 = strcat('Audio/Finished/', mainItems.trainAudioPast2(trialNo));
-    %soundtoplay_trainAudioFuture3 = strcat('Audio/Finished/', mainItems.trainAudioFuture3(trialNo));
-    %soundtoplay_trainAudioPast3 = strcat('Audio/Finished/', mainItems.trainAudioPast3(trialNo));
-    soundtoplay_whichOne = strcat('audio/animalaudiofiles/', mainItems.AnimalAudio(trialNo));
-    %soundtoplay_letsFind = strcat('Audio/Finished/aa_lets_find/', mainItems.letsFindAudio(trialNo));
+    %soundtoplay_ambigAudioFuture = strcat('Audio/Finished/', MAIN_ITEMS.ambigAudioFuture(trialNo));
+    %soundtoplay_ambigAudioPast = strcat('Audio/Finished/', MAIN_ITEMS.ambigAudioPast(trialNo));
+    %soundtoplay_trainAudioFuture1 = strcat('Audio/Finished/', MAIN_ITEMS.trainAudioFuture1(trialNo));
+    %soundtoplay_trainAudioPast1 = strcat('Audio/Finished/', MAIN_ITEMS.trainAudioPast1(trialNo));
+    %soundtoplay_trainAudioFuture2 = strcat('Audio/Finished/', MAIN_ITEMS.trainAudioFuture2(trialNo));
+    %soundtoplay_trainAudioPast2 = strcat('Audio/Finished/', MAIN_ITEMS.trainAudioPast2(trialNo));
+    %soundtoplay_trainAudioFuture3 = strcat('Audio/Finished/', MAIN_ITEMS.trainAudioFuture3(trialNo));
+    %soundtoplay_trainAudioPast3 = strcat('Audio/Finished/', MAIN_ITEMS.trainAudioPast3(trialNo));
+    soundtoplay_whichOne = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/', MAIN_ITEMS.AudioAnimal(trialNo));
+    %soundtoplay_letsFind = strcat('Audio/Finished/aa_lets_find/', MAIN_ITEMS.letsFindAudio(trialNo));
     
     %Each animal's audio:
-    soundtoplay_elephant = strcat('audio/animalaudiofiles/elephant.wav', mainItems.elephant(trialNo));
-    soundtoplay_frog = strcat('audio/animalaudiofiles/frog.wav', mainItems.frog(trialNo));
-    soundtoplay_bird = strcat('audio/animalaudiofiles/bird.wav', mainItems.bird(trialNo));
-    soundtoplay_cat = strcat('audio/animalaudiofiles/cat.wav', mainItems.cat(trialNo));
-    soundtoplay_dog = strcat('audio/animalaudiofiles/dog.wav', mainItems.dog(trialNo));
-    soundtoplay_lion = strcat('audio/animalaudiofiles/lion.wav', mainItems.lion(trialNo));
-    soundtoplay_bee = strcat('audio/animalaudiofiles/bee.wav', mainItems.bee(trialNo));
-    soundtoplay_bear = strcat('audio/animalaudiofiles/bear.wav', mainItems.bear(trialNo));
-    soundtoplay_butterfly = strcat('audio/animalaudiofiles/butterfly.wav', mainItems.butterfly(trialNo));
-    soundtoplay_turtle = strcat('audio/animalaudiofiles/turtle.wav', mainItems.turtle(trialNo));
-    soundtoplay_duck = strcat('audio/animalaudiofiles/duck.wav', mainItems.duck(trialNo));
+    soundtoplay_elephant = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/elephant.wav', MAIN_ITEMS.elephant(trialNo));
+    soundtoplay_frog = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/frog.wav', MAIN_ITEMS.frog(trialNo));
+    soundtoplay_bird = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/bird.wav', MAIN_ITEMS.bird(trialNo));
+    soundtoplay_cat = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/cat.wav', MAIN_ITEMS.cat(trialNo));
+    soundtoplay_dog = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/dog.wav', MAIN_ITEMS.dog(trialNo));
+    soundtoplay_lion = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/lion.wav', MAIN_ITEMS.lion(trialNo));
+    soundtoplay_bee = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/bee.wav', MAIN_ITEMS.bee(trialNo));
+    soundtoplay_bear = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/bear.wav', MAIN_ITEMS.bear(trialNo));
+    soundtoplay_butterfly = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/butterfly.wav', MAIN_ITEMS.butterfly(trialNo));
+    soundtoplay_turtle = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/turtle.wav', MAIN_ITEMS.turtle(trialNo));
+    soundtoplay_duck = strcat(RESOURCEFOLDER, 'audio/animalaudiofiles/duck.wav', MAIN_ITEMS.duck(trialNo));
     
     %these ones are the same every time
     
@@ -62,8 +62,9 @@ global RESOURCEFOLDER MAIN_ITEMS
     %soundtoplay_goodJob = 'Audio/Finished/aa_motivation/goodjob.wav';
     %soundtoplay_nowLetsSee = 'Audio/Finished/aa_motivation/nowletssee.wav';
     %soundtoplay_wow = 'Audio/Finished/aa_motivation/wow.wav';
-    Chime sound; 
-    Whoosh transition;
+    
+    %Chime sound; 
+    %Whoosh transition;
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ANIMAL IMAGES
@@ -111,11 +112,11 @@ global RESOURCEFOLDER MAIN_ITEMS
     Show_Blank;      
       
     %Using the human-interpretable side variables instead...
-    if mainItems.BiasManner(trialNo) == 'L'
+    if MAIN_ITEMS.BiasManner(trialNo) == 'L'
         PlaySideMovies(movietoplay_manner{1},'');
         PlaySideMovies('',movietoplay_path{1});
         
-    elseif mainItems.BiasManner(trialNo) == 'R'
+    elseif MAIN_ITEMS.BiasManner(trialNo) == 'R'
         PlaySideMovies(movietoplay_path{1},'');
         PlaySideMovies('',movietoplay_manner{1});
     end
@@ -127,7 +128,7 @@ global RESOURCEFOLDER MAIN_ITEMS
     Play_Sound(strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/lion.wav'), 'toBlock');
         Show_Blank;    
         
-    mainItems.biasTestAns{trialNo} = Take_Response();
+    MAIN_ITEMS.biasTestAns{trialNo} = Take_Response();
     Show_Blank();
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -143,7 +144,7 @@ global RESOURCEFOLDER MAIN_ITEMS
 % % 111111111111111111111111111111111111111111111111111111111111111111111111
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    mainItems.trainStart(trialNo) = GetSecs;
+    MAIN_ITEMS.trainStart(trialNo) = GetSecs;
 
     %Play_Sound(soundtoplay_trainAudioFuture1{1}, 'toBlock');
 
@@ -187,7 +188,7 @@ global RESOURCEFOLDER MAIN_ITEMS
     Play_Sound(soundtoplay_trainAudioPast3{1}, 'toBlock');
     %****(Which animal gets...)****;
     
-    mainItems.trainEnd(trialNo) = GetSecs;
+    MAIN_ITEMS.trainEnd(trialNo) = GetSecs;
    
     WaitSecs(1.500);
     Show_Blank;
@@ -204,25 +205,25 @@ global RESOURCEFOLDER MAIN_ITEMS
 % PLAY THE TEST MOVIE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    mainItems.finalTestStart(trialNo) = GetSecs;
+    MAIN_ITEMS.finalTestStart(trialNo) = GetSecs;
 
     %Play_Sound(soundtoplay_letsFind{1}, 'toBlock');
     %Show_Blank;      
   
 
     %Using the human-interpretable side variables...
-    if mainItems.TestManner(trialNo) == 'L'
+    if MAIN_ITEMS.TestManner(trialNo) == 'L'
         PlaySideMovies(movietoplay_mTest{1},'');
         PlaySideMovies('',movietoplay_pTest{1});
-    elseif mainItems.TestManner(trialNo) == 'R'
+    elseif MAIN_ITEMS.TestManner(trialNo) == 'R'
         PlaySideMovies(movietoplay_pTest{1},'');
         PlaySideMovies('',movietoplay_mTest{1});
     end
     
      %....and take a response
     Play_Sound(soundtoplay_whichOne{1}, 'toBlock');
-    mainItems.finalTestAns{trialNo} = Take_Response();
-    mainItems.finalTestEnd(trialNo) = GetSecs;
+    MAIN_ITEMS.finalTestAns{trialNo} = Take_Response();
+    MAIN_ITEMS.finalTestEnd(trialNo) = GetSecs;
     
     %%%%%%%%%%%%%%%%%%%%%%
     % SHOW A NICE REWARD PICTURE
