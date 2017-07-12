@@ -8,17 +8,17 @@ global RESOURCEFOLDER
         %Sounds that always play:
         %soundtoplay_chimes =
         %soundtoplay_whoosh =
-        soundtoplay_elephant = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/elephant.wav');
-        soundtoplay_frog = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/frog.wav');
-        soundtoplay_bird = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/bird.wav');
-        soundtoplay_cat = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/cat.wav');
-        soundtoplay_dog = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/dog.wav');
-        soundtoplay_lion = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/lion.wav');
-        soundtoplay_bee = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/bee.wav');
-        soundtoplay_bear = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/bear.wav');
-        soundtoplay_butterfly = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/butterfly.wav');
-        soundtoplay_turtle = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/turtle.wav');
-        soundtoplay_duck = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/duck.wav');
+        soundtoplay_elephant = (RESOURCEFOLDER, '/audio/animalaudiofiles/elephant.wav');
+        soundtoplay_frog = (RESOURCEFOLDER, '/audio/animalaudiofiles/frog.wav');
+        soundtoplay_bird = (RESOURCEFOLDER, '/audio/animalaudiofiles/bird.wav');
+        soundtoplay_cat = (RESOURCEFOLDER, '/audio/animalaudiofiles/cat.wav');
+        soundtoplay_dog = (RESOURCEFOLDER, '/audio/animalaudiofiles/dog.wav');
+        soundtoplay_lion = (RESOURCEFOLDER, '/audio/animalaudiofiles/lion.wav');
+        soundtoplay_bee = (RESOURCEFOLDER, '/audio/animalaudiofiles/bee.wav');
+        soundtoplay_bear = (RESOURCEFOLDER, '/audio/animalaudiofiles/bear.wav');
+        soundtoplay_butterfly = (RESOURCEFOLDER, '/audio/animalaudiofiles/butterfly.wav');
+        soundtoplay_turtle = (RESOURCEFOLDER, '/audio/animalaudiofiles/turtle.wav');
+        soundtoplay_duck = (RESOURCEFOLDER, '/audio/animalaudiofiles/duck.wav');
 
         %%%%%%%%%%%%%%%%%%%%%%
         %FIRST BLOCK     
@@ -65,7 +65,7 @@ global RESOURCEFOLDER
         PlaySideMovies(movietoplay_block1training1_foil,'');
         PlaySideMovies('',movietoplay_block1training1_target);
         Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
+        %Play_Sound(soundtoplay_chimes,)
         
         parameters.block1Training1Ans = Take_Response();
         Show_Blank;
@@ -75,8 +75,8 @@ global RESOURCEFOLDER
         
         PlaySideMovies(movietoplay_block1training2_target,'');
         PlaySideMovies('',movietoplay_block1training2_foil);
-        Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
+        Play_Sound(soundtoplay_cat);
+        %Play_Sound(soundtoplay_chimes)
         
         parameters.block1Training2Ans = Take_Response();
         Show_Blank;
@@ -86,8 +86,8 @@ global RESOURCEFOLDER
         
         PlaySideMovies(movietoplay_block1training3_foil,'');
         PlaySideMovies('',movietoplay_block1training3_target);
-        Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
+        Play_Sound(soundtoplay_cat);
+        %Play_Sound(soundtoplay_chimes)
         
         parameters.block1Training3Ans = Take_Response();
         Show_Blank;
@@ -97,15 +97,15 @@ global RESOURCEFOLDER
         
         PlaySideMovies(movietoplay_block1test_target,'');
         PlaySideMovies('',movietoplay_block1test_foil);
-        Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
+        Play_Sound(soundtoplay_cat);
+        %Play_Sound(soundtoplay_chimes)
         
         parameters.block1TestAns = Take_Response();
         Show_Blank;
         Take_Response(); %spacebar to go on
         Show_Blank;
         
-        %Play_Sound(soundtoplay_whoosh, 'toBlock');
+        %Play_Sound(soundtoplay_whoosh)
         
         %%%%%%%%%%%%%%%%%%%%%%
         %SECOND BLOCK     
