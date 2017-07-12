@@ -106,9 +106,9 @@ try
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    Text_Show('Press spacebar to start the MPC experiment. It should play noun trials and then crash!')
-    Take_Response();
-    Show_Blank();
+    %Text_Show('Press spacebar to start the MPC experiment. It should play noun trials and then crash!')
+    %Take_Response();
+    %Show_Blank();
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % GET READY....
@@ -126,12 +126,14 @@ try
     % 3 TRIALS OF SHAPE TRAINING
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
-    MPP_Noun_Training();
+    %MPC_Shape_Training();
 
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % N TRIALS OF WITHIN-FIELD PRIMING/VERB LEARNING
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    MPC_Main_Block_Trials();
     
     %MK NOTE 6/30/2017 - code below here probably doesn't work!
     
