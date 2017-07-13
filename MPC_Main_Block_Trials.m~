@@ -6,8 +6,9 @@ global RESOURCEFOLDER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
         %Sounds that always play:
-        soundtoplay_chimes = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/elephant.wav');
-        soundtoplay_whoosh = strcat(RESOURCEFOLDER
+        soundtoplay_chimes = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/chimes.wav');
+        soundtoplay_whoosh = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/whoosh.wav');
+        
         soundtoplay_elephant = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/elephant.wav');
         soundtoplay_frog = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/frog.wav');
         soundtoplay_bird = strcat(RESOURCEFOLDER, '/audio/animalaudiofiles/bird.wav');
@@ -23,8 +24,6 @@ global RESOURCEFOLDER
         %%%%%%%%%%%%%%%%%%%%%%
         %FIRST BLOCK     
         %%%%%%%%%%%%%%%%%%%%%%
-        %Play_Sound(strcat(RESOURCEFOLDER, '/audio/aa_nouns/bone1.wav'), 'toBlock');
-        %Show_Blank;
         
         Text_Show('READY? Press space.');
         Take_Response();
@@ -42,104 +41,169 @@ global RESOURCEFOLDER
         movietoplay_block1test_target = strcat(RESOURCEFOLDER, '/movies/crabwalk.up.cat.5.mov');
         movietoplay_block1test_foil = strcat(RESOURCEFOLDER, '/movies/roll.into.tower.5.mov');
         
+        %AMBIGUOUS
         
         Show_Blank;
 
         PlayCenterMovie(movietoplay_block1ambig);
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500);
+        Play_Sound(soundtoplay_chimes, 'toBlock');
 
+        WaitSecs(1.500);
         Show_Blank;
     
+        %BIAS
         
         PlaySideMovies(movietoplay_block1bias_foil,'');
         PlaySideMovies('',movietoplay_block1bias_target);
         Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
          
         parameters.block1BiasAns = Take_Response();
         Show_Blank;
         Take_Response(); %spacebar to go on
         Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
         
+        %TRAINING
         
         PlaySideMovies(movietoplay_block1training1_foil,'');
         PlaySideMovies('',movietoplay_block1training1_target);
         Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
         
         parameters.block1Training1Ans = Take_Response();
         Show_Blank;
         Take_Response(); %spacebar to go on
         Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
         
         
         PlaySideMovies(movietoplay_block1training2_target,'');
         PlaySideMovies('',movietoplay_block1training2_foil);
         Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
         
         parameters.block1Training2Ans = Take_Response();
         Show_Blank;
         Take_Response(); %spacebar to go on
         Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
         
         
         PlaySideMovies(movietoplay_block1training3_foil,'');
         PlaySideMovies('',movietoplay_block1training3_target);
         Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
         
         parameters.block1Training3Ans = Take_Response();
         Show_Blank;
         Take_Response(); %spacebar to go on
         Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
         
+        %TEST
         
         PlaySideMovies(movietoplay_block1test_target,'');
         PlaySideMovies('',movietoplay_block1test_foil);
         Play_Sound(soundtoplay_cat, 'toBlock');
-        %Play_Sound(soundtoplay_chimes, 'toBlock');
         
         parameters.block1TestAns = Take_Response();
         Show_Blank;
         Take_Response(); %spacebar to go on
         Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
         
-        %Play_Sound(soundtoplay_whoosh, 'toBlock');
+        Play_Sound(soundtoplay_whoosh, 'toBlock');
         
         %%%%%%%%%%%%%%%%%%%%%%
         %SECOND BLOCK     
         %%%%%%%%%%%%%%%%%%%%%%  
         
-        Play_Sound(strcat(RESOURCEFOLDER, '/audio/aa_nouns/glorfin1.wav'), 'toBlock');
-        Show_Blank;
-
-        movietoplay_distractor = strcat(RESOURCEFOLDER, '/movies/1_noun_1_distractor.mov');
-        movietoplay_target = strcat(RESOURCEFOLDER, '/movies/1_noun_1b.mov');    
-        movietoplay_sign = strcat(RESOURCEFOLDER, '/movies/1_noun_1a.mov');
-
-        PlayCenterMovie(movietoplay_sign);
+        Text_Show('READY? Press space.');
+        Take_Response();
         Show_Blank;
         
-        Play_Sound((strcat(RESOURCEFOLDER, '/audio/aa_nouns/glorfin2.wav')), 'toBlock');
-        Show_Blank;
-
-        PlaySideMovies(movietoplay_target,'','caption_left','WOWOWOWOW');
-        PlaySideMovies('',movietoplay_distractor,'caption_right','WOWOW'); 
-
-        Play_Sound('/audio/aa_nouns/glorfin3.wav', 'toBlock');    
+        movietoplay_block2ambig = strcat(RESOURCEFOLDER, '/movies/stoopwalk.through.flowers.5.mov');
+        movietoplay_block2bias_target = strcat(RESOURCEFOLDER, '/movies/stoopwalk.between.swings.5.mov');    
+        movietoplay_block2bias_foil = strcat(RESOURCEFOLDER, '/movies/tiptoe.through.lighthouse.5.mov');
+        movietoplay_block2training1_target = strcat(RESOURCEFOLDER, '/movies/stoopwalk.into.barn.5.mov');
+        movietoplay_block2training1_foil = strcat(RESOURCEFOLDER, '/movies/walk.down.cow.5.mov');
+        movietoplay_block2training2_target = strcat(RESOURCEFOLDER, '/movies/stoopwalk.around.fountain.5.mov');
+        movietoplay_block2training2_foil = strcat(RESOURCEFOLDER, '/movies/hop.over.book.5.mov');
+        movietoplay_block2training3_target = strcat(RESOURCEFOLDER, '/movies/stoopwalk.up.monkey.5.mov');
+        movietoplay_block2training3_foil = strcat(RESOURCEFOLDER, '/movies/roll.down.eagle.5.mov');
+        movietoplay_block2test_target = strcat(RESOURCEFOLDER, '/movies/stoopwalk.front.fishtank.5.mov');
+        movietoplay_block2test_foil = strcat(RESOURCEFOLDER, '/movies/crawl.through.pyramid.5.mov');
         
-        parameters.noun2TestAns = Take_Response();
+        %AMBIGUOUS
         
         Show_Blank;
 
-        %Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{3}));
+        PlayCenterMovie(movietoplay_block2ambig);
+        WaitSecs(1.500);
+        Play_Sound(soundtoplay_chimes, 'toBlock');
+
+        WaitSecs(1.500);
+        Show_Blank;
+    
+        %BIAS
         
+        PlaySideMovies(movietoplay_block2bias_target,'');
+        PlaySideMovies('',movietoplay_block2bias_foil);
+        Play_Sound(soundtoplay_bear, 'toBlock');
+         
+        parameters.block2BiasAns = Take_Response();
+        Show_Blank;
         Take_Response(); %spacebar to go on
+        Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
         
-        Show_Blank;   
+        %TRAINING
+        
+        PlaySideMovies(movietoplay_block2training1_foil,'');
+        PlaySideMovies('',movietoplay_block2training1_target);
+        Play_Sound(soundtoplay_bear, 'toBlock');
+        
+        parameters.block2Training1Ans = Take_Response();
+        Show_Blank;
+        Take_Response(); %spacebar to go on
+        Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
+        
+        
+        PlaySideMovies(movietoplay_block2training2_target,'');
+        PlaySideMovies('',movietoplay_block2training2_foil);
+        Play_Sound(soundtoplay_bear, 'toBlock');
+        
+        parameters.block2Training2Ans = Take_Response();
+        Show_Blank;
+        Take_Response(); %spacebar to go on
+        Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
+        
+        
+        PlaySideMovies(movietoplay_block2training3_foil,'');
+        PlaySideMovies('',movietoplay_block2training3_target);
+        Play_Sound(soundtoplay_bear, 'toBlock');
+        
+        parameters.block2Training3Ans = Take_Response();
+        Show_Blank;
+        Take_Response(); %spacebar to go on
+        Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
+        
+        %TEST
+        
+        PlaySideMovies(movietoplay_block2test_target,'');
+        PlaySideMovies('',movietoplay_block2test_foil);
+        Play_Sound(soundtoplay_bear, 'toBlock');
+        
+        parameters.block2TestAns = Take_Response();
+        Show_Blank;
+        Take_Response(); %spacebar to go on
+        Show_Blank;
+        Play_Sound(soundtoplay_chimes, 'toBlock');
+        
+        Play_Sound(soundtoplay_whoosh, 'toBlock');   
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-    % END NOUN TRAINING                             
+    %END MAIN TRAINING BLOCKS                             
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     

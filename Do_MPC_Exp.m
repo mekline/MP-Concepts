@@ -118,8 +118,8 @@ try
 
     %Show_Image(strcat(RESOURCEFOLDER, '/', STARS.noun{1}));
     
-    Take_Response();
-    Show_Blank;
+    %Take_Response();
+    %Show_Blank;
 
       
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -140,7 +140,7 @@ try
     %Number of trials
     parameters.ntrials = 8;
     
-    Text_Show('Ready? Press space to watch the movies.');
+    Text_Show('READY? Press space.');
     Take_Response();
     
     %And actually play the trials! Data is saved on each round to allow for
