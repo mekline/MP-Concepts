@@ -72,10 +72,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_cat, 'toBlock');
         
         parameters.block1Training1Ans = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         
         PlaySideMovies(movietoplay_block1training2_target,'');
@@ -83,10 +84,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_cat, 'toBlock');
         
         parameters.block1Training2Ans = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         
         PlaySideMovies(movietoplay_block1training3_foil,'');
@@ -94,10 +96,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_cat, 'toBlock');
         
         parameters.block1Training3Ans = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         %TEST
         
@@ -106,10 +109,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_cat, 'toBlock');
         
         parameters.block1TestAns = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         WaitSecs(1.000)
         Play_Sound(soundtoplay_whoosh, 'toBlock');
@@ -152,10 +156,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_bear, 'toBlock');
          
         parameters.block2BiasAns = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         %TRAINING
         
@@ -164,10 +169,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_bear, 'toBlock');
         
         parameters.block2Training1Ans = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         
         PlaySideMovies(movietoplay_block2training2_target,'');
@@ -175,10 +181,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_bear, 'toBlock');
         
         parameters.block2Training2Ans = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         
         PlaySideMovies(movietoplay_block2training3_target,'');
@@ -186,10 +193,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_bear, 'toBlock');
         
         parameters.block2Training3Ans = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         %TEST
         
@@ -198,10 +206,11 @@ global RESOURCEFOLDER
         Play_Sound(soundtoplay_bear, 'toBlock');
         
         parameters.block2TestAns = Take_Response();
-        Show_Blank;
         Take_Response(); %spacebar to go on
-        Show_Blank;
+        WaitSecs(1.000)
         Play_Sound(soundtoplay_chimes, 'toBlock');
+        WaitSecs(1.500)
+        Show_Blank;
         
         WaitSecs(1.000)
         Play_Sound(soundtoplay_whoosh, 'toBlock');   
