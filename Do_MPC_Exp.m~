@@ -132,7 +132,7 @@ try
     % 8 MAIN BLOCK TRIALS 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    Trial_Main();
+    MPC_Main_Block_Trials();
     
     %MK NOTE 6/30/2017 - code below here probably doesn't work!
     
@@ -156,12 +156,12 @@ try
     end
     
     %And do the same for the Extension trials, if we're doing that!
-%     for i=(parameters.ntrials+1):(2*parameters.ntrials)
-%         Trial_Extend(i);
-%         expEnd = GetSecs;
-%         parameters.totalTime = expEnd - parameters.expStart;
-%         Write_Trial_to_File(i, EXT_ITEMS);
-%     end
+    for i=(parameters.ntrials+1):(2*parameters.ntrials)
+        Trial_Extend(i);
+        expEnd = GetSecs;
+        parameters.totalTime = expEnd - parameters.expStart;
+        Write_Trial_to_File(i, EXT_ITEMS);
+    end
     
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
